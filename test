@@ -1,8 +1,8 @@
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:0px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:0px 4px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 4px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg .tg-zv4m{border-color:#ffffff;text-align:left;vertical-align:top}
 .tg .tg-v18s{font-size:20px;font-family:"Times New Roman", Times, serif !important;;border-color:#ffffff;text-align:left;vertical-align:top}
 </style>
@@ -35,7 +35,7 @@
     <td class="tg-v18s">Die hat ihnen jemand geschrieben.</td>
     <td class="tg-v18s">Die hat ihnen jemand auf den Tisch gelegt.</td>
     <td class="tg-v18s">Sie hören Begrüßungsworte,</td>
-    <td class="tg-v18s">von allen, <br></td>
+    <td class="tg-v18s">von allen,<br></td>
     <td class="tg-v18s">die es schaffen,</td>
     <td class="tg-v18s">auf die Bühne zu kommen.</td>
   </tr>
