@@ -3,6 +3,7 @@
 html, body {
   margin: 0;
   padding: 20px;
+  font-family: times,serif;
 }
 
 .highlight {
@@ -12,6 +13,7 @@ html, body {
 .highlight::before {
   content:"\e072";
   font-family: 'Glyphicons Halflings';
+  font-size: 2rem;
 }
 
 .current {
@@ -24,7 +26,9 @@ hr {
 
 .grid__brick {
     border: 1px dashed #eee;
-    padding-bottom: 20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 3px;
 }
 
 /* container sizes */
@@ -36,27 +40,31 @@ hr {
 }
 
 .h-medium {
-  min-height: 150px;
+  min-height: 100px;
 }
 
 .h-large {
-  min-height: 300px;
+  min-height: 150px;
 }
 
 /* font-size */
 
 .f-small {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
 }
 
 .f-medium {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
 }
 
 .f-large {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
 }
 
 .f-xlarge {
-  font-size: 3rem;
+  font-size: 3.6rem;
+  line-height: 3.6rem;
 }
