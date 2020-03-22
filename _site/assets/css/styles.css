@@ -1,5 +1,28 @@
-.current { color: green; }
-
-html { margin: 0; padding: 20px; }
+/* layout */
+html, body { margin: 0; padding: 20px; }
 
 .highlight { background-color: yellow; }
+
+.highlight::before { content: "\e072"; font-family: 'Glyphicons Halflings'; }
+
+.current { color: green; }
+
+hr { margin-top: 200px; }
+
+.grid__brick { border: 1px dashed #eee; padding-bottom: 20px; }
+
+/* container sizes */
+.h-small { min-height: 50px; }
+
+.h-medium { min-height: 200px; }
+
+.h-large { min-height: 250px; }
+
+/* font-size */
+.f-small { font-size: 1.5rem; }
+
+.f-medium { font-size: 2rem; }
+
+.f-large { font-size: 2.5rem; }
+
+.f-xlarge { font-size: 3rem; }

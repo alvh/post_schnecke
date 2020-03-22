@@ -5,9 +5,16 @@ title: Home
 <div id="grid" class="my-shuffle-container row">
   {% for text in site.texte %}
   <div class="grid__brick mt-3 col-6 col-md-4 col-xl-3">
-    <div class="{{ text.name }}" style="border: none">
+    <div class="{{ text.container }} {{ text.font }}" style="border: none">
       {{ text.content }}
     </div>
   </div>
   {% endfor %}
 </div>
+
+{% for audio in site.static_files %}
+    {% if audio.path contains 'audio/' %}
+    {{ audio.filename}}
+        <audio id="{{ audio.name | replace: '.mp3', '' }}" src="{{ site.baseurl }}{{ audio.path }}" type="audio/mp3"></audio>
+    {% endif %}
+{% endfor %}
