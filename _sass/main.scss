@@ -6,14 +6,18 @@ html, body {
   font-family: times,serif;
 }
 
+.nr {
+  font-family: helvetica,sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
 .highlight {
   background-color: yellow;
 }
 
-.highlight::before {
-  content:"\e072";
-  font-family: 'Glyphicons Halflings';
-  font-size: 2rem;
+.strike {
+  text-decoration: line-through;
 }
 
 .current {
@@ -25,26 +29,42 @@ hr {
 }
 
 .grid__brick {
-    border: 1px dashed #eee;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    padding-left: 3px;
+    border: 1px #0000ff;
+    border-bottom-style: none;
+    border-left-style: dotted;
+    border-right-style: none;
+    border-top-style: dotted;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 5px;
 }
 
 /* container sizes */
 
 .t-auto {}
 
+.h-oneline {
+  height: 20px;
+}
+
+.h-twoline {
+  height: 40px;
+}
+
+.h-fourline {
+  height: 80px;
+}
+
 .h-small {
-  min-height: 50px;
+  height: 80px;
 }
 
 .h-medium {
-  min-height: 100px;
+  height: 160px;
 }
 
 .h-large {
-  min-height: 150px;
+  height: 320px;
 }
 
 /* font-size */

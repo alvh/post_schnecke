@@ -1,22 +1,30 @@
 /* layout */
 html, body { margin: 0; padding: 20px; font-family: times,serif; }
 
+.nr { font-family: helvetica,sans-serif; font-size: 1rem; line-height: 1rem; }
+
 .highlight { background-color: yellow; }
 
-.highlight::before { content: "\e072"; font-family: 'Glyphicons Halflings'; font-size: 2rem; }
+.strike { text-decoration: line-through; }
 
 .current { color: green; }
 
 hr { margin-top: 200px; }
 
-.grid__brick { border: 1px dashed #eee; padding-bottom: 3px; padding-top: 3px; padding-left: 3px; }
+.grid__brick { border: 1px #0000ff; border-bottom-style: none; border-left-style: dotted; border-right-style: none; border-top-style: dotted; padding-bottom: 4px; padding-top: 4px; padding-left: 5px; }
 
 /* container sizes */
-.h-small { min-height: 50px; }
+.h-oneline { height: 20px; }
 
-.h-medium { min-height: 100px; }
+.h-twoline { height: 40px; }
 
-.h-large { min-height: 150px; }
+.h-fourline { height: 80px; }
+
+.h-small { height: 80px; }
+
+.h-medium { height: 160px; }
+
+.h-large { height: 320px; }
 
 /* font-size */
 .f-small { font-size: 1.8rem; line-height: 1.8rem; }
