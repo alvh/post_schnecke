@@ -11,9 +11,9 @@ html, body { margin: 0; padding: 20px; font-family: times,serif; }
 
 hr { margin-top: 200px; }
 
-.grid__brick { border: 1px #0000ff; border-bottom-style: none; border-left-style: dotted; border-right-style: none; border-top-style: dotted; padding-bottom: 4px; padding-top: 4px; padding-left: 5px; }
+.grid__brick { border: 1px #eee; border-bottom-style: none; border-left-style: dotted; border-right-style: none; border-top-style: dotted; padding-bottom: 4px; padding-top: 4px; padding-left: 5px; }
 
-/* container sizes */
+/* container formats */
 .h-oneline { height: 20px; }
 
 .h-twoline { height: 40px; }
@@ -25,6 +25,8 @@ hr { margin-top: 200px; }
 .h-medium { height: 160px; }
 
 .h-large { height: 320px; }
+
+.c-yellow { background: yellow; }
 
 /* font-size */
 .f-small { font-size: 1.8rem; line-height: 1.8rem; }

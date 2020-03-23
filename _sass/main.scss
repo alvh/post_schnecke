@@ -20,6 +20,7 @@ html, body {
   text-decoration: line-through;
 }
 
+
 .current {
   color: green;
 }
@@ -29,7 +30,7 @@ hr {
 }
 
 .grid__brick {
-    border: 1px #0000ff;
+    border: 1px #eee;
     border-bottom-style: none;
     border-left-style: dotted;
     border-right-style: none;
@@ -39,7 +40,7 @@ hr {
     padding-left: 5px;
 }
 
-/* container sizes */
+/* container formats */
 
 .t-auto {}
 
@@ -65,6 +66,10 @@ hr {
 
 .h-large {
   height: 320px;
+}
+
+.c-yellow {
+  background: yellow;
 }
 
 /* font-size */
