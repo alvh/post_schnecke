@@ -15,10 +15,12 @@
   </head>
   <body>
     <div class="filter__bar row">
-  <button id='all' class="button">Alle</button>
-  <button id='btn-first' class="button">gestern</button>
-  <button id='btn-second' class="button">heute</button>
-  <button id='btn-third' class="button">morgen</button>
+  <button id='all' class="button">alle</button>
+  <button id='btn-first' class="button">ansprache</button>
+  <button id='btn-second' class="button">schnecke</button>
+  <button id='btn-third' class="button">es war einmal</button>
+  <button id='btn-fourth' class="button">wir</button>
+  <button id='btn-fifth' class="button">absage</button>
 </div>
 
     Impressum
@@ -66,13 +68,19 @@
      shuffleInstance.filter();
   });
   $("#btn-first").on("click", function(){
-     shuffleInstance.filter('gestern');
+     shuffleInstance.filter('ansprache');
   });
   $("#btn-second").on("click", function(){
-     shuffleInstance.filter('heute');
+     shuffleInstance.filter('schnecke');
   });
   $("#btn-third").on("click", function(){
-     shuffleInstance.filter('morgen');
+     shuffleInstance.filter('einmal');
+  });
+  $("#btn-fourth").on("click", function(){
+     shuffleInstance.filter('wir');
+  });
+  $("#btn-fifth").on("click", function(){
+     shuffleInstance.filter('absage');
   });
 
 
