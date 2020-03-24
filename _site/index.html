@@ -3,22 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.min.js" ></script>
+    <script src="https://unpkg.com/shufflejs@5" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <link rel="stylesheet" href="/assets/css/styles.css" >
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
+
   </head>
   <body>
+    <div class="filter__bar row">
+  <button id='all' class="button">Alle</button>
+  <button id='btn-first' class="button">gestern</button>
+  <button id='btn-second' class="button">heute</button>
+  <button id='btn-third' class="button">morgen</button>
+</div>
+
     <div id="grid" class="my-shuffle-container row">
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-large f-large " style="border: none">
       <span class="strike">start</span> again
 <br><span class="nr">0000 A0</span>
@@ -26,7 +31,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-large " style="border: none">
       <span class="highlight" audio-id="start">start</span> again here.
 <br><span class="nr">0001 A0</span>
@@ -34,7 +39,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-large " style="border: none">
       Also,
 <br><span class="nr">0002 A0</span>
@@ -42,7 +47,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <b>Die demokratische Schnecke</b>
 <br><span class="nr">0003 A0</span>
@@ -50,7 +55,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       Ein großes Märchen.
 <br><span class="nr">0004 A0</span>
@@ -58,7 +63,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-large " style="border: none">
       Hallo / Huhu!
 <br>!<span class="nr">0005 A0</span>
@@ -66,7 +71,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       Hör mal: <span class="highlight" audio-id="Marker_026">hier</span>!
 <br><span class="nr">0006 A0</span>
@@ -74,7 +79,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small c-yellow" style="border: none">
       „<span class="highlight">Es war einmal ein Anfang</span> und er ist nicht gestorben und so lebt er noch <span class="highlight">heute</span>.“
 <span class="nr">0101 A0</span>
@@ -82,42 +87,42 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0102 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0103 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0104 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0105 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0106 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="highlight">Wie sieht es denn hier* aus</span>.
 <br><span class="nr">0110 A0</span>
@@ -125,7 +130,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       Sie hören <span class="strike">seit Stunden</span> Begrüßungen.
 <br><span class="nr">0111 A0</span>
@@ -133,7 +138,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       Sie hören lässig vorgebrachte Reden.
 <br><span class="nr">0112 A0</span>
@@ -141,7 +146,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       Launige Reden.
 <br><span class="nr">0113 A0</span>
@@ -149,7 +154,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-medium f-small " style="border: none">
       Reden, die jene, die die Reden halten, <span class="strike">nicht</span> selbst geschrieben haben. Die hat ihnen jemand geschrieben.
 <br><span class="nr">0114 A0</span>
@@ -157,28 +162,28 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0115 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0115 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0120 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       Die hat ihnen jemand auf den <i>Tisch</i> gelegt.
 <br><span class="nr">0121 A0</span>
@@ -186,7 +191,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small c-yellow" style="border: none">
       <span class="highlight"   audio-id="Marker_186">Tisch</span>
 <br><span class="nr">0122 a-186</span>
@@ -194,14 +199,14 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-medium " style="border: none">
       <span class="nr">0123 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-large f-medium " style="border: none">
       Sie hören Begrüßungsworte, von allen, die es schaffen, auf die Bühne zu kommen.
 <br><span class="nr">0124 A0</span>
@@ -209,7 +214,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-small f-small " style="border: none">
       Sie hören Begrüßungsworte, von allen, denen es einfällt, den Ort, an dem sie gerade stehen, eine Bühne zu nennen.
 <br><span class="nr">0125 A0</span>
@@ -217,14 +222,14 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0126 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-medium f-xlarge " style="border: none">
       Genießen Sie <span class="highlight">die Aussichten?</span>
 <br><span class="nr">0130 A0</span>
@@ -232,7 +237,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-large f-small " style="border: none">
       Sie sprechen nun auch Begrüßungsworte
 <br><span class="nr">0131 A0</span>
@@ -240,7 +245,7 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-medium f-small " style="border: none">
       und es wirkt (<span class="highlight">nicht</span>) so, als ob Sie alle, die da sind, kennten.
 <br><span class="nr">0132 A0</span>
@@ -248,14 +253,14 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='["gestern","morgen" ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0133 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='["gestern" ]'>
     <div class="h-fourline f-small " style="border: none">
       Sie sagen: „Beziehung hat viele Formen, sie steht auf dem Spiel, ist unfertig und hat Folgen.“ (1)
 <br><span class="nr">0134 A0</span>
@@ -263,14 +268,14 @@
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='["gestern" ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0135 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='[ ]'>
     <div class="h-fourline f-small " style="border: none">
       <span class="nr">0136 A0</span>
 
@@ -312,8 +317,6 @@
         <audio id="start" src="/assets/audio/start.mp3" type="audio/mp3"></audio>
     
 
-    
-
 
     <hr>
     <nav>
@@ -327,10 +330,33 @@
 
   </body>
   <script type="text/javascript" >
-    window.shuffleInstance = new window.Shuffle(document.getElementById('grid'), {
+  <!-- shuffle -->
+  //   window.shuffleInstance = new window.Shuffle(document.getElementById('grid'), {
+  //   itemSelector: '.grid__brick',
+  //   sizer: '.my-sizer-element',
+  //   randomize: true
+  // });
+
+  var Shuffle = window.Shuffle;
+  var element = document.querySelector('#grid');
+  var sizer = element.querySelector('.my-sizer-element');
+
+  var shuffleInstance = new Shuffle(element, {
     itemSelector: '.grid__brick',
-    sizer: '.my-sizer-element',
-    randomize: true
+    sizer: sizer // could also be a selector: '.my-sizer-element'
+  });
+  // shuffleInstance.filter('animal');
+  $("#all").on("click", function(){
+     shuffleInstance.filter();
+  });
+  $("#btn-first").on("click", function(){
+     shuffleInstance.filter('gestern');
+  });
+  $("#btn-second").on("click", function(){
+     shuffleInstance.filter('heute');
+  });
+  $("#btn-third").on("click", function(){
+     shuffleInstance.filter('morgen');
   });
 
 

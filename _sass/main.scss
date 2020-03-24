@@ -40,6 +40,22 @@ hr {
     padding-left: 5px;
 }
 
+.filter__bar {
+  margin-bottom: 20px;
+  margin-left: -10px
+}
+
+.button {
+  background-color: #000; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: none;
+}
+
 /* container formats */
 
 .t-auto {}

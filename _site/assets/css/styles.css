@@ -13,6 +13,10 @@ hr { margin-top: 200px; }
 
 .grid__brick { border: 1px #eee; border-bottom-style: none; border-left-style: dotted; border-right-style: none; border-top-style: dotted; padding-bottom: 4px; padding-top: 4px; padding-left: 5px; }
 
+.filter__bar { margin-bottom: 20px; margin-left: -10px; }
+
+.button { background-color: #000; /* Green */ border: none; color: white; padding: 5px 5px; text-align: center; text-decoration: none; display: inline-block; margin-left: none; }
+
 /* container formats */
 .h-oneline { min-height: 20px; }
 
