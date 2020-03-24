@@ -47,5 +47,20 @@
 
   });
 
+    var pupil = document.getElementById("pupil");
+    var eyeClip = document.getElementById("eyeClip");
+
+
+    document.addEventListener("mousemove", function (e) {
+        var eyeHeight = 250;
+        var eyeWidth = 250;
+
+        var left = (e.clientX/window.innerWidth)*eyeWidth-125;
+        var top = (e.clientY/window.innerHeight)*eyeHeight-125;
+        pupil.setAttribute("transform", "translate(" + left + " " + top + ")");
+    }, false);
+
+
+
   </script>
 </html>
