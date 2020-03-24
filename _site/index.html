@@ -75,7 +75,7 @@
   
   <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2" data-groups='["schnecke" ]'>
     <div class="h-medium f-small " style="border: none">
-      Hör mal: <span class="audio" audio-id="Marker_026"> hier</span>!
+      Hör mal: <span class="audio" audio-id="Marker026"> hier X</span>!
 <br><span class="nr">0006 A0</span>
 
     </div>
@@ -364,7 +364,7 @@
 
     
     
-        <audio id="Marker_026" src="/assets/audio/Marker_026.mp3" type="audio/mp3"></audio>
+        <audio id="Marker026" src="/assets/audio/Marker026.mp3" type="audio/mp3"></audio>
     
 
     
@@ -443,9 +443,10 @@
 
   var playing = false;
 
-  $('.highlight').click(function() {
+  $('.audio').click(function() {
       $(this).toggleClass("down");
       var el = $(this).attr("audio-id");
+
       var audioTarget = "#"+el;
       if (playing == false) {
           $(audioTarget)[0].play();
