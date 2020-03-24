@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
+      <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css" >
 
   </head>
@@ -93,6 +93,21 @@
       }
 
   });
+
+    var pupil = document.getElementById("pupil");
+    var eyeClip = document.getElementById("eyeClip");
+
+
+    document.addEventListener("mousemove", function (e) {
+        var eyeHeight = 250;
+        var eyeWidth = 250;
+
+        var left = (e.clientX/window.innerWidth)*eyeWidth-125;
+        var top = (e.clientY/window.innerHeight)*eyeHeight-125;
+        pupil.setAttribute("transform", "translate(" + left + " " + top + ")");
+    }, false);
+
+
 
   </script>
 </html>
