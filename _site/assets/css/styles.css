@@ -5,7 +5,7 @@ html, body { margin: 0; padding: 20px; font-family: times,serif; }
 
 .highlight { background-color: yellow; }
 
-.audio::before { content: "\e072"; font-family: 'Glyphicons Halflings'; font-size: 2rem; }
+.audio::before { content: "\e072"; font-family: 'Glyphicons Halflings'; font-size: 1,5rem; }
 
 .strike { text-decoration: line-through; }
 
