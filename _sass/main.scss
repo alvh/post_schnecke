@@ -45,27 +45,27 @@ hr {
 .t-auto {}
 
 .h-oneline {
-  height: 20px;
+  min-height: 20px;
 }
 
 .h-twoline {
-  height: 40px;
+  min-height: 40px;
 }
 
 .h-fourline {
-  height: 80px;
+  min-height: 80px;
 }
 
 .h-small {
-  height: 80px;
+  min-height: 80px;
 }
 
 .h-medium {
-  height: 160px;
+  min-height: 160px;
 }
 
 .h-large {
-  height: 320px;
+  min-height: 320px;
 }
 
 .c-yellow {
