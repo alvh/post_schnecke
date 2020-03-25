@@ -4,8 +4,8 @@ title: Home
 ---
 <div id="grid" class="my-shuffle-container row">
   {% for text in site.texte %}
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2 {{ text.container__class }}" data-groups='[{{ text.tags }} ]'>
-    <div class="{{ text.container }} {{ text.font }} {{ text.note }}" style="border: none">
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2 {{ text.container__class }} {{ text.special }}" data-groups='[{{ text.tags }} ]'>
+    <div class="{{ text.container }} {{ text.font }} {{ text.note }}" style="border: none;">
       {{ text.content }}
     </div>
   </div>
