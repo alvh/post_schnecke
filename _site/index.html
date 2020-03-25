@@ -35,7 +35,7 @@
   
   <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2 " data-groups='["ansprache","schnecke" ]'>
     <div class="h-medium f-large " style="border: none">
-      <span class="audio" audio-id="start">start</span> again here.
+      <span class="audio" audio-id="start">▶</span> start again.
 <br><span class="nr">0001 A0</span>
 
     </div>
@@ -51,8 +51,8 @@
   
   <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2 " data-groups='["ansprache","wir","einmal" ]'>
     <div class="h-medium f-small " style="border: none">
-      <b>Die demokratische Schnecke</b>
-<br><span class="nr">0003 A0</span>
+      <span class="nr">0003 A0</span>
+<br><b>Die demokratische Schnecke</b>
 
     </div>
   </div>
@@ -198,14 +198,17 @@
   
   <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2 " data-groups='[ ]'>
     <div class="h-medium f-small " style="border: none">
-      <span class="nr">0115 A0</span>
+      na gut,
+<br><span class="nr">0115 A0</span>
 
     </div>
   </div>
   
-  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2 " data-groups='["ansprache" ]'>
-    <div class="h-fourline f-small " style="border: none">
-      <span class="nr">0115 A0</span>
+  <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2 " data-groups='[ ]'>
+    <div class="h-medium f-small " style="border: none">
+      na,
+<br>
+<br><span class="nr">0116 A0</span>
 
     </div>
   </div>
@@ -252,7 +255,7 @@
     <div class="h-small f-small " style="border: none">
       <a name="name_des_ziels"></a> <span class="f-link">genau</span>: start again here:
 <br>Sie hören Begrüßungsworte, von allen, denen es einfällt, den Ort, an dem sie gerade stehen, eine Bühne zu nennen.
-<br><span class="nr">0125 A0</span>
+<br><br><span class="nr">0125 A0</span>
 
     </div>
   </div>
@@ -306,7 +309,7 @@
   <div class="grid__brick col-sm-6 col-md-4 col-lg-2 col-xl-2 " data-groups='["schnecke" ]'>
     <div class="t-auto f-small " style="border: none">
       <span class="highlight">Wie sieht es denn hier* aus</span>. Sie hören <span class="strike">seit Stunden</span> Begrüßungen. Sie hören lässig vorgebrachte Reden. Launige Reden. Reden, die jene, die die Reden halten, <span class="strike">nicht</span> selbst geschrieben haben. Die hat ihnen jemand geschrieben. Die hat ihnen jemand auf den Tisch gelegt. Sie hören Begrüßungsworte, von allen, die es schaffen, auf die Bühne zu kommen. Sie hören Begrüßungsworte, von allen, denen es einfällt, den Ort, an dem sie gerade stehen, eine Bühne zu nennen. — <span class="highlight">Genießen Sie die Aussichten?</span>
-<span class="nr">0135 A0</span>
+<br><br><span class="nr">0135 A0</span>
 
     </div>
   </div>
@@ -446,7 +449,6 @@
   $('.audio').click(function() {
       $(this).toggleClass("down");
       var el = $(this).attr("audio-id");
-
       var audioTarget = "#"+el;
       if (playing == false) {
           $(audioTarget)[0].play();
