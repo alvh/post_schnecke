@@ -16,8 +16,6 @@
   <body>
     {% include filter.html %}
     {{ content }}
-    <hr>
-    {% include navigation.html %}
 
   </body>
   <script type="text/javascript" >
@@ -32,7 +30,7 @@
   });
   // shuffleInstance.filter('animal');
   $("#all").on("click", function(){
-     shuffleInstance.filter();
+     shuffleInstance.filter(['ansprache','schnecke','einmal','wir','absage']);
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
@@ -58,6 +56,11 @@
   });
   $("#btn-fifth").on("click", function(){
      shuffleInstance.filter('absage');
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
+  });
+  $("#btn-six").on("click", function(){
+     shuffleInstance.filter('imprint');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
@@ -96,6 +99,10 @@
         var top = (e.clientY/window.innerHeight)*eyeHeight-125;
         pupil.setAttribute("transform", "translate(" + left + " " + top + ")");
     }, false);
+
+    $(document).ready(function(){
+      $('#all').trigger( "click" );
+    });
 
 
 
