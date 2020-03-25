@@ -33,21 +33,33 @@
   // shuffleInstance.filter('animal');
   $("#all").on("click", function(){
      shuffleInstance.filter();
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
   });
   $("#btn-first").on("click", function(){
      shuffleInstance.filter('ansprache');
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
   });
   $("#btn-second").on("click", function(){
      shuffleInstance.filter('schnecke');
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
   });
   $("#btn-third").on("click", function(){
      shuffleInstance.filter('einmal');
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
   });
   $("#btn-fourth").on("click", function(){
      shuffleInstance.filter('wir');
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
   });
   $("#btn-fifth").on("click", function(){
      shuffleInstance.filter('absage');
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
   });
 
 
