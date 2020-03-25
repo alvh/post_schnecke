@@ -48,12 +48,6 @@
 
   </body>
   <script type="text/javascript" >
-  <!-- shuffle -->
-  //   window.shuffleInstance = new window.Shuffle(document.getElementById('grid'), {
-  //   itemSelector: '.grid__brick',
-  //   sizer: '.my-sizer-element',
-  //   randomize: true
-  // });
 
   var Shuffle = window.Shuffle;
   var element = document.querySelector('#grid');
@@ -93,10 +87,13 @@
       if (playing == false) {
           $(audioTarget)[0].play();
           playing = true;
+          oldVal = $(this).text();
+          $(this).text("❚❚");
           // $(this).text("stop sound");
       } else {
         $(audioTarget)[0].pause();
         playing = false;
+        $(this).text(oldVal);
         // $(this).text("restart sound");
       }
 

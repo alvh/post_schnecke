@@ -7,7 +7,7 @@ html, body { margin: 0; padding: 20px; font-family: times,serif; }
 
 .highlight { background-color: yellow; }
 
-.audio { font-size: 1.0rem; cursor: pointer; }
+.audio { font-size: 1.0rem; cursor: pointer; border: 1px solid; padding: 2px; }
 
 .strike { text-decoration: line-through; }
 
