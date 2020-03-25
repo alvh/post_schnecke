@@ -6,6 +6,13 @@ html, body {
   font-family: times,serif;
 }
 
+.grid__brick:hover{
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  cursor: default;
+}
+
 .nr {
   font-family: helvetica,sans-serif;
   font-size: 1rem;
@@ -16,10 +23,9 @@ html, body {
   background-color: yellow;
 }
 
-.audio::before {
-  content:"\e072";
-  font-family: 'Glyphicons Halflings';
-  font-size: 1,5rem;
+.audio {
+  font-size: 1.0rem;
+  cursor: pointer;
 }
 
 .strike {
@@ -47,7 +53,7 @@ hr {
 
 .filter__bar {
   margin-bottom: 20px;
-  margin-left: -10px
+  margin-left: -10px;
 }
 
 .button {
@@ -80,8 +86,13 @@ hr {
 
 /* note background */
 
+.no__padding {
+  padding: 0!important;
+}
+
 .c-yellow {
   background: yellow;
+  padding: 10px;
 }
 
 /* font-formats */

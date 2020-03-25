@@ -1,11 +1,13 @@
 /* layout */
 html, body { margin: 0; padding: 20px; font-family: times,serif; }
 
+.grid__brick:hover { -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); cursor: default; }
+
 .nr { font-family: helvetica,sans-serif; font-size: 1rem; line-height: 1rem; }
 
 .highlight { background-color: yellow; }
 
-.audio::before { content: "\e072"; font-family: 'Glyphicons Halflings'; font-size: 1,5rem; }
+.audio { font-size: 1.0rem; cursor: pointer; }
 
 .strike { text-decoration: line-through; }
 
@@ -27,7 +29,9 @@ hr { margin-top: 200px; }
 .h-large { min-height: 320px; }
 
 /* note background */
-.c-yellow { background: yellow; }
+.no__padding { padding: 0 !important; }
+
+.c-yellow { background: yellow; padding: 10px; }
 
 /* font-formats */
 .f-link { color: blue; }
