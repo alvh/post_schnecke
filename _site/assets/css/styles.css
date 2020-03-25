@@ -3,11 +3,11 @@ html, body { margin: 0; padding: 20px; font-family: times,serif; }
 
 .grid__brick:hover { -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); cursor: default; }
 
-.nr { font-family: helvetica,sans-serif; font-size: 1rem; line-height: 1rem; position: absolute; bottom: 4px; left: 4px; }
+.nr { font-family: helvetica,sans-serif; font-size: 1rem; line-height: 1rem; position: absolute; bottom: 5px; left: 5px; }
 
 .highlight { background-color: yellow; }
 
-.audio { font-size: 1.0rem; cursor: pointer; border: 1px solid; padding: 2px; }
+.audio { font-size: 1.8rem; cursor: pointer; border: 0px solid; padding: 4px; }
 
 .strike { text-decoration: line-through; }
 
