@@ -19,7 +19,7 @@ hr { margin-top: 200px; }
 
 .filter__bar { margin-bottom: 20px; margin-left: -10px; }
 
-.button { background-color: #000; border: none; color: white; padding: 5px 5px; text-align: center; text-decoration: none; display: inline-block; margin-left: none; }
+.button { background-color: #000; border: none; color: white; padding: 5px 5px; text-align: center; text-decoration: none; font-family: helvetica,sans-serif; display: inline-block; margin-left: none; }
 
 /* container formats */
 .h-small { min-height: 80px; }
