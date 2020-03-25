@@ -364,7 +364,7 @@
 
     
     
-        <audio id="Marker_026" src="/assets/audio/Marker_026.mp3" type="audio/mp3"></audio>
+        <audio id="Marker026" src="/assets/audio/Marker026.mp3" type="audio/mp3"></audio>
     
 
     
@@ -446,6 +446,7 @@
   $('.audio').click(function() {
       $(this).toggleClass("down");
       var el = $(this).attr("audio-id");
+
       var audioTarget = "#"+el;
       if (playing == false) {
           $(audioTarget)[0].play();

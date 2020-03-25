@@ -89,6 +89,7 @@
   $('.audio').click(function() {
       $(this).toggleClass("down");
       var el = $(this).attr("audio-id");
+
       var audioTarget = "#"+el;
       if (playing == false) {
           $(audioTarget)[0].play();
