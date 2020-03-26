@@ -6,6 +6,12 @@ html, body {
   font-family: times,serif;
 }
 
+/* hide site */
+* {
+  display: none;
+}
+
+
 body:before {
  content:"";
  position:fixed;
