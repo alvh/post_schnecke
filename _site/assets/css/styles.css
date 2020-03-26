@@ -11,7 +11,7 @@ body:before { content: ""; position: fixed; top: -10px; left: 0; width: 100%; he
 
 .hi { display: none; }
 
-.audio { font-size: 1.4rem; cursor: pointer; border: 0px solid; padding-right: 4px; }
+.audio { font-size: 1.3rem; cursor: pointer; border: 0px solid; padding-right: 4px; }
 
 .strike { text-decoration: line-through; }
 
