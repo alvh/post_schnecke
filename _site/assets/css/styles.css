@@ -19,7 +19,7 @@ body:before { content: ""; position: fixed; top: -10px; left: 0; width: 100%; he
 
 hr { margin-top: 200px; }
 
-.grid__brick { border: 1px #eee; border-bottom-style: none; border-left-style: dotted; border-right-style: none; border-top-style: dotted; padding-bottom: 4px; padding-top: 4px; padding-left: 5px; }
+.grid__brick { border: 1px #eee; border-bottom-style: none; border-left-style: dotted; border-right-style: none; border-top-style: dotted; padding-bottom: 4px; padding-top: 4px; padding-left: 4px; }
 
 .filter__bar { margin-bottom: 60px; }
 
