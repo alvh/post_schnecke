@@ -8,7 +8,7 @@ body:before { content: ""; position: fixed; top: -10px; left: 0; width: 100%; he
 
 .nr { font-family: helvetica,sans-serif; font-size: 1rem; line-height: 1rem; position: absolute; bottom: 6px; left: 6px; }
 
-.highlight { background-color: yellow; }
+.highlight { background-color: #f33; }
 
 .hi { display: none; }
 
@@ -38,7 +38,7 @@ hr { margin-top: 200px; }
 /* note background */
 .no__padding { padding: 0 !important; }
 
-.c-yellow { background: yellow; padding: 10px; }
+.c-yellow { background: #f33; padding: 10px; }
 
 /* font-formats */
 .f-link { color: blue; }
