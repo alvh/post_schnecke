@@ -34,6 +34,8 @@ hr { margin-top: 200px; }
 
 .h-large { min-height: 360px; }
 
+.h-xlarge { min-height: 450px; }
+
 /* note background */
 .no__padding { padding: 0 !important; }
 
