@@ -29,36 +29,43 @@
   });
   // shuffleInstance.filter('animal');
   $("#all").on("click", function(){
+     history.replaceState({}, document.title, window.location.href.split('#')[0]);
      shuffleInstance.filter(['ansprache','schnecke','einmal','wir','absage']);
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
   $("#btn-first").on("click", function(){
+     history.replaceState({}, document.title, window.location.href.split('#')[0]);
      shuffleInstance.filter('ansprache');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
   $("#btn-second").on("click", function(){
+     history.replaceState({}, document.title, window.location.href.split('#')[0]);
      shuffleInstance.filter('schnecke');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
   $("#btn-third").on("click", function(){
+     history.replaceState({}, document.title, window.location.href.split('#')[0]);
      shuffleInstance.filter('einmal');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
   $("#btn-fourth").on("click", function(){
+     history.replaceState({}, document.title, window.location.href.split('#')[0]);
      shuffleInstance.filter('wir');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
   $("#btn-fifth").on("click", function(){
+     history.replaceState({}, document.title, window.location.href.split('#')[0]);
      shuffleInstance.filter('absage');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
   $("#btn-six").on("click", function(){
+     history.replaceState({}, document.title, window.location.href.split('#')[0]); 
      shuffleInstance.filter('imprint');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
