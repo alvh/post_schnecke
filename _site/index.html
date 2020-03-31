@@ -22,6 +22,7 @@
   <button id='btn-fourth' class="button">wir</button>
   <button id='btn-fifth' class="button">absage</button>
   <button id='btn-six' class="button">impressum</button>
+  <button id='btn-seventh' class="button"><span class="strike">absage</span></button>
 </div>
 
       <div id="grid" class="my-shuffle-container row">
@@ -3558,6 +3559,11 @@ E-Mail: datenschutz(at)muenchen.de</span>
   });
   $("#btn-six").on("click", function(){
      shuffleInstance.filter('imprint');
+     $('.button').removeClass('btn-active');
+     $(this).addClass('btn-active');
+  });
+  $("#btn-seven").on("click", function(){
+     shuffleInstance.filter('jetzt');
      $('.button').removeClass('btn-active');
      $(this).addClass('btn-active');
   });
