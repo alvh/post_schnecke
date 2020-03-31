@@ -44,7 +44,7 @@ hr { margin-top: 200px; }
 /* font-formats */
 .f-link { color: blue; }
 
-.hyperlink { color: blue; }
+.hyperlink { color: blue; font-size: 1rem; }
 
 .hyperlink:hover { color: blue; }
 
